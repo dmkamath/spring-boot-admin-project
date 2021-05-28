@@ -46,6 +46,12 @@ to do this, right click src/main/java/com/example/demo/myapp/MyAppApplication.ja
 
 SBA now should show application count as 1
 
+If you are curious what my-app does, go to http://localhost:8082. it prints hello world. 
+
+in SBA you can change logger level etc
+
+
+
 
 Differences between these apps and our apps
 ============================================
