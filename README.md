@@ -13,7 +13,11 @@ How to run in IntelliJ
       1. Add module (click +)
       1. Import Module (as gradle)
       1. navigate to c:\gitrepos\spring-boot-admin-project\spring-boot-admin
-      1. click OK 
+      1. click OK
+      1. IMPORTANT: to make the project work within 53 VPN you need to go through JFrog 
+         1. build.gradle (need buildscript to use jfrog.gradle) (see other existing projects as reference)
+         1. copy down jfrog.gradle
+         1. settings.gradle. copy everything but rootaProject.name
 1. Then add my-app (in c:\gitrepos\spring-boot-admin-project) as a module.
    1. Intellij -> File -> Project Structure -> Modules
       1. Add module (click +)
@@ -32,15 +36,15 @@ then in the browser http://localhost:8080
 SBA starts and begins to listen to apps
 Since no apps are running, SBA now should show application count as 0
 
-
-Differences between these apps and our apps
-============================================
-our apps use gradle to build but these use maven. no big deal just saying..
-
 next start my-app. this app represents the application managed by SBA.
 to do this, right click src/main/java/com/example/demo/myapp/MyAppApplication.java and hit Run
 
 SBA now should show application count as 1
+
+
+Differences between these apps and our apps
+============================================
+our apps use gradle to build but these use maven. no big deal just saying..
 
 
 How was this created
