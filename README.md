@@ -14,7 +14,7 @@ How to run in IntelliJ
       1. Import Module (as gradle)
       1. navigate to c:\gitrepos\spring-boot-admin-project\spring-boot-admin
       1. click OK
-      1. IMPORTANT: to make the project work within 53 VPN you need to go through JFrog 
+      1. IMPORTANT: to make the project work within 53 VPN you need to go through JFrog (skip this step if you are running this in home netowrk)
          1. build.gradle (need buildscript to use jfrog.gradle) (see other existing projects as reference)
          1. copy down jfrog.gradle
          1. settings.gradle. copy everything but rootaProject.name
@@ -24,6 +24,11 @@ How to run in IntelliJ
       1. Import Module (as gradle)
       1. navigate to c:\gitrepos\spring-boot-admin-project\my-app
       1. click OK
+      1. IMPORTANT: to make the project work within 53 VPN you need to go through JFrog (skip this step if you are running this in home netowrk)
+         1. build.gradle (need buildscript to use jfrog.gradle) (see other existing projects as reference)
+         1. copy down jfrog.gradle
+         1. settings.gradle. copy everything but rootaProject.name
+   
 
 if all goes well, both apps should build properly
 
